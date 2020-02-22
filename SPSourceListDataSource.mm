@@ -1144,7 +1144,7 @@ static NSString* SPSharedCollectionServiceType = @"_sidmusic._tcp";
 	BOOL exists = [[NSFileManager defaultManager] fileExistsAtPath:destinationPath isDirectory:&isFolder];
 	if (!exists)
 	{
-		exists = [[NSFileManager defaultManager] createDirectoryAtPath:destinationPath attributes:nil];
+		exists = [[NSFileManager defaultManager] createDirectoryAtPath:destinationPath withIntermediateDirectories:true attributes:nil error:nil];
 		isFolder = YES;
 	}
 
