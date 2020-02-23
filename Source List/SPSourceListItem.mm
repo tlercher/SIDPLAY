@@ -108,7 +108,7 @@ static NSImage* sSmartPlaylistIcon = nil;
     [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
 
 	NSDictionary* headerAttrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont systemFontOfSize:11.0f], NSFontAttributeName, 
-																			paragraphStyle, NSParagraphStyleAttributeName, nil];
+																			paragraphStyle, NSParagraphStyleAttributeName, [NSColor labelColor], NSForegroundColorAttributeName, nil];
 	name = [[NSAttributedString alloc] initWithString:nameString attributes:headerAttrs];
 }
 
@@ -505,7 +505,7 @@ static NSImage* sSmartPlaylistIcon = nil;
 // ----------------------------------------------------------------------------
 {
 	if (sharedCollectionIcon == nil)
-		sharedCollectionIcon = [NSImage imageNamed:@"shared_collection"];
+		sharedCollectionIcon = [NSImage imageNamed:@"SharedCollection"];
 	
 	return sharedCollectionIcon;
 }
@@ -516,7 +516,7 @@ static NSImage* sSmartPlaylistIcon = nil;
 // ----------------------------------------------------------------------------
 {
 	if (sPlaylistIcon == nil)
-		sPlaylistIcon = [NSImage imageNamed:@"playlist"];
+		sPlaylistIcon = [NSImage imageNamed:@"Playlist"];
 
 	return sPlaylistIcon;
 }
@@ -527,7 +527,7 @@ static NSImage* sSmartPlaylistIcon = nil;
 // ----------------------------------------------------------------------------
 {
 	if (sSmartPlaylistIcon == nil)
-		sSmartPlaylistIcon = [NSImage imageNamed:@"smart_playlist"];
+		sSmartPlaylistIcon = [NSImage imageNamed:@"SmartPlaylist"];
 
 	return sSmartPlaylistIcon;
 }

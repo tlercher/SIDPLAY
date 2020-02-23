@@ -2699,7 +2699,7 @@ static NSImage* SPShuffleButtonImage = nil;
 		[iconImage drawInRect:NSMakeRect(16.0f, 16.0f, 32.0f, 32.0f) fromRect:iconImageRect operation:NSCompositeSourceOver fraction:0.5f];
 		[badgeImage compositeToPoint:NSMakePoint(38.0f, 10.0f) operation:NSCompositeSourceOver];
 		NSDictionary* normalAttrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont boldSystemFontOfSize:11.0f], NSFontAttributeName,
-																		       [NSColor whiteColor], NSForegroundColorAttributeName, nil];
+																		       [NSColor labelColor], NSForegroundColorAttributeName, nil];
 		NSMutableAttributedString* numberString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%lu", (unsigned long)[dragRows count]] attributes:normalAttrs];
 		[numberString drawAtPoint:NSMakePoint(47.0f, 16.0f)];
 		[image unlockFocus];

@@ -322,7 +322,7 @@ static NSString* SPSharedCollectionServiceType = @"_sidmusic._tcp";
     [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
 
 	NSDictionary* headerAttrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont systemFontOfSize:12.0f], NSFontAttributeName,
-																			paragraphStyle, NSParagraphStyleAttributeName, nil];
+																			paragraphStyle, NSParagraphStyleAttributeName, [NSColor labelColor], NSForegroundColorAttributeName, nil];
 	NSAttributedString* listItemName = [[NSAttributedString alloc] initWithString:name attributes:headerAttrs];
 
 	SPSourceListItem* item = [[SPSourceListItem alloc] initWithName:listItemName forPath:path withIcon:image];
@@ -353,7 +353,7 @@ static NSString* SPSharedCollectionServiceType = @"_sidmusic._tcp";
     [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
 
 	NSDictionary* headerAttrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont boldSystemFontOfSize:12.0f], NSFontAttributeName,
-																			paragraphStyle, NSParagraphStyleAttributeName, nil];
+																			paragraphStyle, NSParagraphStyleAttributeName, [NSColor secondaryLabelColor], NSForegroundColorAttributeName, nil];
 	NSAttributedString* headerName = [[NSAttributedString alloc] initWithString:name attributes:headerAttrs];
 	
 	SPSourceListItem* headerItem = [[SPSourceListItem alloc] initWithName:headerName forPath:@"" withIcon:nil];
@@ -1405,7 +1405,7 @@ static NSString* SPSharedCollectionServiceType = @"_sidmusic._tcp";
 	NSMutableParagraphStyle* paragraphStyle = [[NSParagraphStyle defaultParagraphStyle] mutableCopy];
     [paragraphStyle setLineBreakMode:NSLineBreakByTruncatingMiddle];
 	NSDictionary* attrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont systemFontOfSize:12.0f], NSFontAttributeName,
-																			paragraphStyle, NSParagraphStyleAttributeName, nil];
+																			paragraphStyle, NSParagraphStyleAttributeName, [NSColor labelColor], NSForegroundColorAttributeName, nil];
 	NSAttributedString* listItemName = [[NSAttributedString alloc] initWithString:object attributes:attrs];
 	
 	if ([listItemName length] == 0)

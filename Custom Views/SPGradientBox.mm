@@ -7,10 +7,23 @@
 - (void) drawRect:(NSRect)rect
 // ----------------------------------------------------------------------------
 {
-	NSGradient* gradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedWhite:0.96f alpha:1.0f] endingColor:[NSColor colorWithCalibratedWhite:0.89f alpha:1.0f]];
+    NSGradient* gradient;
+    BOOL isDarkAppearance = false;
+    
+    if (@available(macOS 10.14, *)) {
+        NSAppearanceName basicAppearance = [[self effectiveAppearance] bestMatchFromAppearancesWithNames:@[
+            NSAppearanceNameAqua,
+            NSAppearanceNameDarkAqua
+        ]];
+        isDarkAppearance = [basicAppearance isEqualToString:NSAppearanceNameDarkAqua];
+    }
+    if (isDarkAppearance) {
+        gradient = [[NSGradient alloc] initWithStartingColor:[NSColor windowBackgroundColor] endingColor:[[NSColor windowBackgroundColor] shadowWithLevel:0.16f]];
+    } else {
+        gradient = [[NSGradient alloc] initWithStartingColor:[NSColor colorWithCalibratedWhite:0.96f alpha:1.0f] endingColor:[NSColor colorWithCalibratedWhite:0.89f alpha:1.0f]];
+    }
     [gradient drawInRect:[self bounds] angle:-90];
 }
-
 @end
 
 
