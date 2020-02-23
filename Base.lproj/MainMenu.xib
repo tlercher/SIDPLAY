@@ -3113,7 +3113,8 @@ http://psid64.sourceforge.net/</string>
             <point key="canvasLocation" x="142" y="-2437"/>
         </window>
         <window title="Export Tasks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="Export Task Window" animationBehavior="default" tabbingMode="disallowed" id="1370" customClass="SPExportTaskWindow">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="60" y="458" width="338" height="463"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2137"/>
@@ -3127,13 +3128,13 @@ http://psid64.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" id="U2e-Rm-zPx">
                             <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <collectionView ambiguous="YES" maxNumberOfColumns="1" id="1375">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="primaryBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="secondaryBackgroundColor" red="0.92941183000000005" green="0.95294124000000002" blue="0.99607849000000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
                                         <binding destination="1393" name="content" keyPath="arrangedObjects" id="1405"/>
                                         <outlet property="itemPrototype" destination="1376" id="1378"/>
@@ -3478,7 +3479,7 @@ DQ
                         <rect key="frame" x="156" y="79" width="408" height="224"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1969">
-                            <font key="font" metaFont="controlContent"/>
+                            <font key="font" metaFont="label" size="12"/>
                             <string key="title">All you need now to start your Commodore 64 music experience is a collection of tunes. SIDPLAY will make it easy for you to get all the SID music you'll ever need.
 
 SIDPLAY was designed to work best with the High Voltage SID Collection (more commonly known as HVSC). If you've already downloaded the HVSC collection, just click "Use existing collection" to specify the location of your HVSC folder (usually called C64music). Or choose any other collection or a folder containing .sid files if you prefer.
