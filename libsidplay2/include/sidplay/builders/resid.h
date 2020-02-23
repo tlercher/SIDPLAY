@@ -23,8 +23,8 @@
  */
 
 #include <vector>
-#include <sidbuilder.h>
-#include <event.h>
+#include "sidbuilder.h"
+#include "event.h"
 //#include <sidplay/sidbuilder.h>
 //#include <sidplay/event.h>
 

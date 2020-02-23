@@ -22,7 +22,7 @@
 /* $Id: tables.c,v 1.19 2002/12/08 17:02:25 takehiro Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include "util.h"

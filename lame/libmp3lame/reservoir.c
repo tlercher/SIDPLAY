@@ -22,7 +22,7 @@
 /* $Id: reservoir.c,v 1.29.2.2 2005/11/26 18:37:34 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include <assert.h>

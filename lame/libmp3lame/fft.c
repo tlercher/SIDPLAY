@@ -35,7 +35,7 @@
 /* $Id: fft.c,v 1.25.4.1 2005/11/20 14:08:24 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include <math.h>

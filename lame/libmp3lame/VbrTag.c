@@ -23,7 +23,7 @@
 /* $Id: VbrTag.c,v 1.80.2.2 2005/11/27 10:20:35 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include "machine.h"

@@ -31,7 +31,7 @@
 /* $Id: id3tag.c,v 1.23.4.1 2006/01/21 16:29:37 takehiro Exp $ */
 
 #ifdef HAVE_CONFIG_H
-#include <lameconfig.h>
+#include "lameconfig.h"
 #endif
 
 #ifdef STDC_HEADERS

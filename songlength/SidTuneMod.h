@@ -17,7 +17,7 @@
 #ifndef SIDTUNEMOD_H
 #define SIDTUNEMOD_H
 
-#include <SidTune.h>
+#include "SidTune.h"
 
 class MD5;
 

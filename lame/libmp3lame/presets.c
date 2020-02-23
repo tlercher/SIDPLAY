@@ -21,7 +21,7 @@
 #include "set_get.h"
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 #include "util.h"
 

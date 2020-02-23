@@ -2,9 +2,9 @@
 #ifndef _PlayerLibSidplay_H
 #define _PlayerLibSidplay_H
 
-#include <sidplay2.h>
-#include <resid.h>
-#include <resid-emu.h>
+#include "sidplay2.h"
+#include "resid.h"
+#include "resid-emu.h"
 
 #include "AudioDriver.h"
 

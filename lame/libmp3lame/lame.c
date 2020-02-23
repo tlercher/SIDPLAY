@@ -27,7 +27,7 @@
 /* $Id: lame.c,v 1.278.2.2 2005/11/20 14:08:24 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 

@@ -25,7 +25,7 @@
 /* $Id: quantize.c,v 1.170.2.2 2005/11/20 14:08:25 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include <math.h>

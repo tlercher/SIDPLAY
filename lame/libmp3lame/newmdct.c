@@ -27,7 +27,7 @@
 /* $Id: newmdct.c,v 1.29.2.1 2005/11/20 14:08:25 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include "util.h"

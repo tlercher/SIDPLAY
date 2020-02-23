@@ -23,7 +23,7 @@
 /* $Id: set_get.c,v 1.71.2.2 2005/11/26 18:37:34 bouvigne Exp $ */
 
 #ifdef HAVE_CONFIG_H
-# include <lameconfig.h>
+# include "lameconfig.h"
 #endif
 
 #include <assert.h>
