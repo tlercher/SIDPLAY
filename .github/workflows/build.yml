@@ -1,0 +1,22 @@
+on: 
+  pull_request:
+    branches:
+      - master
+  push:
+    branches:
+    - master
+jobs:
+    build:
+      name: Build for macOS
+      runs-on: macos-latest
+      strategy:
+        matrix:
+          destination: ['platform=macOS,arch=x86_64']
+      steps:
+        - uses: actions/checkout@master
+        - name: Build
+          run: |
+            xcodebuild clean build -workspace SIDPLAY.xcworkspace -scheme SIDPLAY -destination "${destination}" CODE_SIGN_IDENTITY="" CODE_SIGNING_REQUIRED=NO ONLY_ACTIVE_ARCH=NO
+          env:
+            destination: ${{ matrix.destination }}
+
