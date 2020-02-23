@@ -915,8 +915,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="131" height="41"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button toolTip="Enable fast forwarding of playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="668">
-                                        <rect key="frame" x="89" y="9" width="29" height="21"/>
+                                    <button toolTip="Enable fast forwarding of playback" translatesAutoresizingMaskIntoConstraints="NO" id="668">
+                                        <rect key="frame" x="90" y="9" width="28" height="21"/>
                                         <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Warp" imagePosition="overlaps" alignment="center" continuous="YES" id="669">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -925,8 +925,8 @@
                                             <action selector="clickFastForwardButton:" target="371" id="683"/>
                                         </connections>
                                     </button>
-                                    <button toolTip="Start/pause playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="679">
-                                        <rect key="frame" x="49" y="0.0" width="32" height="41"/>
+                                    <button toolTip="Start/pause playback" translatesAutoresizingMaskIntoConstraints="NO" id="679">
+                                        <rect key="frame" x="49" y="0.0" width="33" height="41"/>
                                         <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="HUD/Play" imagePosition="only" alignment="center" id="680">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
@@ -950,10 +950,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="668" firstAttribute="leading" secondItem="679" secondAttribute="trailing" constant="8" symbolic="YES" id="4Fs-Si-uBT"/>
+                                    <constraint firstItem="668" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="679" secondAttribute="trailing" constant="8" symbolic="YES" id="4Fs-Si-uBT"/>
                                     <constraint firstItem="666" firstAttribute="top" secondItem="668" secondAttribute="top" id="4j2-KO-HUo"/>
                                     <constraint firstItem="679" firstAttribute="leading" secondItem="666" secondAttribute="trailing" constant="8" symbolic="YES" id="5iO-gL-aD8"/>
                                     <constraint firstItem="679" firstAttribute="centerX" secondItem="38I-Zu-ash" secondAttribute="centerX" id="7Ye-Pc-DMF"/>
+                                    <constraint firstAttribute="trailing" secondItem="668" secondAttribute="trailing" constant="13" id="9rC-GL-aN6"/>
                                     <constraint firstItem="666" firstAttribute="top" secondItem="38I-Zu-ash" secondAttribute="top" constant="11" id="FiY-A0-oxt"/>
                                     <constraint firstAttribute="bottom" secondItem="666" secondAttribute="bottom" constant="9" id="NGx-HU-RMw"/>
                                     <constraint firstAttribute="bottom" secondItem="679" secondAttribute="bottom" id="Nnj-UK-RRd"/>
@@ -1025,15 +1026,15 @@
                                 <rect key="frame" x="0.0" y="0.0" width="156" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="699">
-                                        <rect key="frame" x="119" y="11" width="27" height="18"/>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="699">
+                                        <rect key="frame" x="119" y="10" width="27" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="27" id="c05-Rp-laU"/>
                                         </constraints>
                                         <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeRight" id="706"/>
                                     </imageView>
-                                    <imageView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1167">
-                                        <rect key="frame" x="10" y="11" width="18" height="17"/>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="1167">
+                                        <rect key="frame" x="10" y="10" width="18" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="18" id="NJD-UQ-d64"/>
                                         </constraints>
@@ -1346,7 +1347,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="F3B-Cn-Urn">
                             <rect key="frame" x="1" y="1" width="347" height="154"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView ambiguous="YES" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" usesRuler="YES" spellingCorrection="YES" id="861">
                                     <rect key="frame" x="0.0" y="-14" width="347" height="154"/>
@@ -2833,7 +2834,7 @@ http://lame.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="6rL-AI-JWl">
                             <rect key="frame" x="1" y="1" width="471" height="137"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1686">
                                     <rect key="frame" x="0.0" y="-14" width="471" height="137"/>
