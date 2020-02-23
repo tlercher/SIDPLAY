@@ -635,6 +635,7 @@
                                                     </connections>
                                                 </outlineView>
                                             </subviews>
+                                            <nil key="backgroundColor"/>
                                         </clipView>
                                         <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
                                         <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="472">
@@ -916,7 +917,7 @@
                                 <subviews>
                                     <button toolTip="Enable fast forwarding of playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="668">
                                         <rect key="frame" x="89" y="9" width="29" height="21"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Warp" imagePosition="overlaps" alignment="center" continuous="YES" id="669">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Warp" imagePosition="overlaps" alignment="center" continuous="YES" id="669">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -926,7 +927,7 @@
                                     </button>
                                     <button toolTip="Start/pause playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="679">
                                         <rect key="frame" x="49" y="0.0" width="32" height="41"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="Play" imagePosition="only" alignment="center" id="680">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="HUD/Play" imagePosition="only" alignment="center" id="680">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -939,7 +940,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="pme-3R-OPP"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Stop" imagePosition="only" alignment="center" id="671">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Stop" imagePosition="only" alignment="center" id="671">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -3110,7 +3111,7 @@ http://psid64.sourceforge.net/</string>
             </connections>
             <point key="canvasLocation" x="142" y="-2437"/>
         </window>
-        <window title="Export Tasks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="Export Task Window" animationBehavior="default" id="1370" customClass="SPExportTaskWindow">
+        <window title="Export Tasks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="Export Task Window" animationBehavior="default" tabbingMode="disallowed" id="1370" customClass="SPExportTaskWindow">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="60" y="458" width="338" height="463"/>
@@ -3125,7 +3126,7 @@ http://psid64.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" id="U2e-Rm-zPx">
                             <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
-                            <autoresizingMask key="autoresizingMask"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <collectionView ambiguous="YES" maxNumberOfColumns="1" id="1375">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
@@ -3317,6 +3318,7 @@ http://psid64.sourceforge.net/</string>
                 <outlet property="exportTaskWindow" destination="1370" id="1694"/>
                 <outlet property="exportTasksCount" destination="1715" id="1722"/>
                 <outlet property="exporterArray" destination="1393" id="1437"/>
+                <outlet property="taskSlider" destination="1701" id="RHS-ND-89H"/>
             </connections>
         </customObject>
         <box autoresizesSubviews="NO" boxType="custom" borderType="none" titlePosition="noTitle" id="1839" userLabel="Spotlight Search Type View" customClass="SPGradientBox">
@@ -3675,19 +3677,19 @@ Gw
     <resources>
         <image name="Add" width="32" height="23"/>
         <image name="AddSmart" width="32" height="23"/>
+        <image name="HUD/Play" width="19" height="22"/>
+        <image name="HUD/Stop" width="16" height="16"/>
+        <image name="HUD/Warp" width="28" height="16"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
         <image name="NSGoLeftTemplate" width="9" height="12"/>
         <image name="NSGoRightTemplate" width="9" height="12"/>
         <image name="NSRevealFreestandingTemplate" width="14" height="14"/>
         <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
-        <image name="Play" width="19" height="22"/>
-        <image name="Stop" width="16" height="16"/>
         <image name="Sync" width="32" height="23"/>
         <image name="TempoLeft" width="8" height="13"/>
         <image name="TempoRight" width="8" height="13"/>
         <image name="VolumeLeft" width="14" height="12"/>
         <image name="VolumeRight" width="20" height="14"/>
-        <image name="Warp" width="28" height="16"/>
         <image name="fade" width="26" height="16"/>
         <image name="hud_play" width="19" height="22"/>
         <image name="hud_stop" width="16" height="16"/>

@@ -25,6 +25,7 @@
 	IBOutlet NSArrayController *exporterArray;
 	IBOutlet SPExportTaskWindow* exportTaskWindow;
 	IBOutlet NSTextField* exportTasksCount;
+    IBOutlet NSSlider *taskSlider;
 }
 
 - (void) exportFile:(SPExportItem*)item withType:(ExportFileType)type;

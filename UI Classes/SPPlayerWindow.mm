@@ -241,18 +241,18 @@ NSString* SPUrlRequestUserAgentString = nil;
 {
 	if (pause)
 	{
-		[playPauseButton setImage:[NSImage imageNamed:@"Pause"]];
+		[playPauseButton setImage:[NSImage imageNamed:@"HUD/Pause"]];
 		//[playPauseButton setAlternateImage:[NSImage imageNamed:@"pause_pressed"]];
 		
-		[miniPlayPauseButton setImage:[NSImage imageNamed:@"Pause"]];
+		[miniPlayPauseButton setImage:[NSImage imageNamed:@"HUD/Pause"]];
 		//[miniPlayPauseButton setAlternateImage:[NSImage imageNamed:@"pause_pressed"]];
 	}
 	else
 	{
-		[playPauseButton setImage:[NSImage imageNamed:@"Play"]];
+		[playPauseButton setImage:[NSImage imageNamed:@"HUD/Play"]];
 		//[playPauseButton setAlternateImage:[NSImage imageNamed:@"play_pressed"]];
 
-		[miniPlayPauseButton setImage:[NSImage imageNamed:@"Play"]];
+		[miniPlayPauseButton setImage:[NSImage imageNamed:@"HUD/Play"]];
 		//[miniPlayPauseButton setAlternateImage:[NSImage imageNamed:@"play_pressed"]];
 	}
 }
