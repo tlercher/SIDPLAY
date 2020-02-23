@@ -282,9 +282,9 @@
 {
 	inStartState = YES;
 	
-	leftBackGroundImage = [NSImage imageNamed:@"display_left"];
-	middleBackGroundImage = [NSImage imageNamed:@"display_middle"];
-	rightBackGroundImage = [NSImage imageNamed:@"display_right"];
+	leftBackGroundImage = [NSImage imageNamed:@"DisplayLeft"];
+	middleBackGroundImage = [NSImage imageNamed:@"DisplayMiddle"];
+	rightBackGroundImage = [NSImage imageNamed:@"DisplayRight"];
 
 	for (int i = 0; i < 10; i++)
 	{
