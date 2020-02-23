@@ -727,28 +727,7 @@
 		080E96DDFE201D6D7F000001 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
-				1FDD6E790D82E40E00489870 /* SPPlayerWindow.mm */,
-				1FDD6E780D82E40E00489870 /* SPPlayerWindow.h */,
-				1FDD6E770D82E40E00489870 /* SPMiniPlayerWindow.mm */,
-				1FDD6E760D82E40E00489870 /* SPMiniPlayerWindow.h */,
-				1FD866B70D0AE44600CFC1FD /* SPApplicationStorageController.mm */,
-				1FD866B60D0AE44600CFC1FD /* SPApplicationStorageController.h */,
-				1FEE59940CF8231D006A04B0 /* SPPreferencesController.mm */,
-				1FEE59930CF8231D006A04B0 /* SPPreferencesController.h */,
-				1F5173E70CF9A9F30064AFA2 /* SPInfoWindowController.mm */,
-				1F5173E60CF9A9F30064AFA2 /* SPInfoWindowController.h */,
-				1F00F6240D053D8000E91BB9 /* SPStilBrowserController.mm */,
-				1F00F6230D053D8000E91BB9 /* SPStilBrowserController.h */,
-				1F9384EC0F801B970004040B /* SPAnalyzerWindowController.mm */,
-				1F9384EB0F801B970004040B /* SPAnalyzerWindowController.h */,
-				1FEE5AB40CF88604006A04B0 /* SPCollectionUtilities.mm */,
-				1FEE5AB30CF88604006A04B0 /* SPCollectionUtilities.h */,
-				1FEF90520D02E5550014D7B2 /* SPColorProvider.mm */,
-				1FEF90510D02E5550014D7B2 /* SPColorProvider.h */,
-				1F571B570E8B6DD8001F3425 /* SPURLConnectionScheduler.mm */,
-				1F571B560E8B6DD8001F3425 /* SPURLConnectionScheduler.h */,
-				1FEB2ADA0FB5C14900AD9F79 /* SPRemixKwedOrgController.mm */,
-				1FEB2AD90FB5C14900AD9F79 /* SPRemixKwedOrgController.h */,
+				E91C2C9F2402970E00532C5C /* UI Classes */,
 				1F3896690CEE37C200942B17 /* Browser */,
 				1F3895C70CED827000942B17 /* Source List */,
 				1F82AC560D19915C00CCB355 /* Playlist Support */,
@@ -1436,6 +1415,35 @@
 				1058C7A2FEA54F0111CA2CBB /* Other Frameworks */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E91C2C9F2402970E00532C5C /* UI Classes */ = {
+			isa = PBXGroup;
+			children = (
+				1FDD6E790D82E40E00489870 /* SPPlayerWindow.mm */,
+				1FDD6E780D82E40E00489870 /* SPPlayerWindow.h */,
+				1FDD6E770D82E40E00489870 /* SPMiniPlayerWindow.mm */,
+				1FDD6E760D82E40E00489870 /* SPMiniPlayerWindow.h */,
+				1FD866B70D0AE44600CFC1FD /* SPApplicationStorageController.mm */,
+				1FD866B60D0AE44600CFC1FD /* SPApplicationStorageController.h */,
+				1FEE59940CF8231D006A04B0 /* SPPreferencesController.mm */,
+				1FEE59930CF8231D006A04B0 /* SPPreferencesController.h */,
+				1F5173E70CF9A9F30064AFA2 /* SPInfoWindowController.mm */,
+				1F5173E60CF9A9F30064AFA2 /* SPInfoWindowController.h */,
+				1F00F6240D053D8000E91BB9 /* SPStilBrowserController.mm */,
+				1F00F6230D053D8000E91BB9 /* SPStilBrowserController.h */,
+				1F9384EC0F801B970004040B /* SPAnalyzerWindowController.mm */,
+				1F9384EB0F801B970004040B /* SPAnalyzerWindowController.h */,
+				1FEE5AB40CF88604006A04B0 /* SPCollectionUtilities.mm */,
+				1FEE5AB30CF88604006A04B0 /* SPCollectionUtilities.h */,
+				1FEF90520D02E5550014D7B2 /* SPColorProvider.mm */,
+				1FEF90510D02E5550014D7B2 /* SPColorProvider.h */,
+				1F571B570E8B6DD8001F3425 /* SPURLConnectionScheduler.mm */,
+				1F571B560E8B6DD8001F3425 /* SPURLConnectionScheduler.h */,
+				1FEB2ADA0FB5C14900AD9F79 /* SPRemixKwedOrgController.mm */,
+				1FEB2AD90FB5C14900AD9F79 /* SPRemixKwedOrgController.h */,
+			);
+			path = "UI Classes";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
