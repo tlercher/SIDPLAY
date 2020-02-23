@@ -728,11 +728,11 @@
 			isa = PBXGroup;
 			children = (
 				E91C2C9F2402970E00532C5C /* UI Classes */,
-				1F3896690CEE37C200942B17 /* Browser */,
-				1F3895C70CED827000942B17 /* Source List */,
-				1F82AC560D19915C00CCB355 /* Playlist Support */,
+				E91C2CA32402980600532C5C /* Browser */,
+				E91C2CA02402977300532C5C /* Source List */,
+				E91C2CA2240297E500532C5C /* Playlist Support */,
 				1F2EC5030D3609D0002DA711 /* Export Support */,
-				1F0FF64D0CF773E2000DAD6D /* Custom Views */,
+				E91C2CA12402979B00532C5C /* Custom Views */,
 				1F38967C0CEE3C6500942B17 /* Playback Engine */,
 				1FCC68600CF07344005AFA9A /* Songlength Support */,
 			);
@@ -769,27 +769,6 @@
 				8D1107320486CEB800E47090 /* SIDPLAY.app */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		1F0FF64D0CF773E2000DAD6D /* Custom Views */ = {
-			isa = PBXGroup;
-			children = (
-				1FCC6AE10CF2264E005AFA9A /* SPStatusDisplayView.mm */,
-				1FCC6AE00CF2264E005AFA9A /* SPStatusDisplayView.h */,
-				1F05AA7B0D511BEE004725C5 /* SPVisualizerView.mm */,
-				1F05AA7C0D511BEE004725C5 /* SPVisualizerView.h */,
-				1FB8FF540D186F6500945D64 /* SPGradientBox.mm */,
-				1FB8FF530D186F6500945D64 /* SPGradientBox.h */,
-				1FB8FF730D1875EA00945D64 /* SPPredicateEditor.mm */,
-				1FB8FF720D1875EA00945D64 /* SPPredicateEditor.h */,
-				1F932CE20F8DC7B900BC8A4F /* SPSynchronizedScrollView.mm */,
-				1F932CE10F8DC7B900BC8A4F /* SPSynchronizedScrollView.h */,
-				1F4CA9670FA342A800B56AB6 /* SPCachedView.mm */,
-				1F4CA9660FA342A800B56AB6 /* SPCachedView.h */,
-				1F93871D0F81F1D10004040B /* Info Window Views */,
-				1F93871E0F81F1F00004040B /* Analyzer Window Views */,
-			);
-			name = "Custom Views";
 			sourceTree = "<group>";
 		};
 		1F2EC5030D3609D0002DA711 /* Export Support */ = {
@@ -921,34 +900,6 @@
 				1FCE7F101BEEA3ED00BA374A /* tempo_right@2x.png */,
 			);
 			name = Images;
-			sourceTree = "<group>";
-		};
-		1F3895C70CED827000942B17 /* Source List */ = {
-			isa = PBXGroup;
-			children = (
-				1F46266A0D9AEE5000C12916 /* SPSourceListDataSource.mm */,
-				1F3895C20CED826800942B17 /* SPSourceListDataSource.h */,
-				1F3895BF0CED826800942B17 /* SPSourceListItem.mm */,
-				1F3895C00CED826800942B17 /* SPSourceListItem.h */,
-				1F3895C10CED826800942B17 /* SPSourceListCell.mm */,
-				1F3895BE0CED826800942B17 /* SPSourceListCell.h */,
-			);
-			name = "Source List";
-			sourceTree = "<group>";
-		};
-		1F3896690CEE37C200942B17 /* Browser */ = {
-			isa = PBXGroup;
-			children = (
-				1F38966B0CEE37DF00942B17 /* SPBrowserDataSource.mm */,
-				1F38966A0CEE37DF00942B17 /* SPBrowserDataSource.h */,
-				1F38966E0CEE383900942B17 /* SPBrowserItem.mm */,
-				1F38966D0CEE383900942B17 /* SPBrowserItem.h */,
-				1F9C78A20E4F4BBC0075F535 /* SPHttpBrowserItem.mm */,
-				1F9C78A30E4F4BBC0075F535 /* SPHttpBrowserItem.h */,
-				1F14E3F30D83F3F9001BAB20 /* SPBrowserState.mm */,
-				1F14E3F20D83F3F9001BAB20 /* SPBrowserState.h */,
-			);
-			name = Browser;
 			sourceTree = "<group>";
 		};
 		1F38967C0CEE3C6500942B17 /* Playback Engine */ = {
@@ -1242,81 +1193,6 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1F82AC560D19915C00CCB355 /* Playlist Support */ = {
-			isa = PBXGroup;
-			children = (
-				1F30ABFA0D0B3E6100C162A2 /* SPPlaylist.mm */,
-				1F30ABF90D0B3E6100C162A2 /* SPPlaylist.h */,
-				1F207AD90D414B5400BBEF40 /* SPSimplePlaylist.mm */,
-				1F207AD80D414B5400BBEF40 /* SPSimplePlaylist.h */,
-				1F207ADC0D414B6100BBEF40 /* SPSmartPlaylist.mm */,
-				1F207ADB0D414B6100BBEF40 /* SPSmartPlaylist.h */,
-				1F207ADF0D414B6D00BBEF40 /* SPPlaylistItem.mm */,
-				1F207ADE0D414B6D00BBEF40 /* SPPlaylistItem.h */,
-				1FB8FE030D17107000945D64 /* SPPredicateEditorController.mm */,
-				1FB8FE020D17107000945D64 /* SPPredicateEditorController.h */,
-			);
-			name = "Playlist Support";
-			sourceTree = "<group>";
-		};
-		1F93871D0F81F1D10004040B /* Info Window Views */ = {
-			isa = PBXGroup;
-			children = (
-				1F5174280CF9BA810064AFA2 /* SPInfoContainerView.mm */,
-				1F5174270CF9BA810064AFA2 /* SPInfoContainerView.h */,
-				1F5174250CF9B7870064AFA2 /* SPInfoView.mm */,
-				1F5174240CF9B7870064AFA2 /* SPInfoView.h */,
-				1F25A3E50CFCB7A70063F7E7 /* SPTuneInfoView.mm */,
-				1F25A3E40CFCB7A70063F7E7 /* SPTuneInfoView.h */,
-				1F51741C0CF9AD6A0064AFA2 /* SPOscilloscopeView.mm */,
-				1F51741B0CF9AD6A0064AFA2 /* SPOscilloscopeView.h */,
-				1F25A48D0CFCC5DB0063F7E7 /* SPSidRegisterView.mm */,
-				1F25A48C0CFCC5DB0063F7E7 /* SPSidRegisterView.h */,
-				1F25A4900CFCC6510063F7E7 /* SPMixerView.mm */,
-				1F25A48F0CFCC6510063F7E7 /* SPMixerView.h */,
-				1F25A4930CFCC6F30063F7E7 /* SPFilterControlView.mm */,
-				1F25A4920CFCC6F30063F7E7 /* SPFilterControlView.h */,
-				1F25A4960CFCC7680063F7E7 /* SPComposerPhotoView.mm */,
-				1F25A4950CFCC7680063F7E7 /* SPComposerPhotoView.h */,
-			);
-			name = "Info Window Views";
-			sourceTree = "<group>";
-		};
-		1F93871E0F81F1F00004040B /* Analyzer Window Views */ = {
-			isa = PBXGroup;
-			children = (
-				1FB7FE280F9D9AEC00BBA496 /* SPAnalyzerScaleSideView.mm */,
-				1FB7FE270F9D9AEC00BBA496 /* SPAnalyzerScaleSideView.h */,
-				1FCE59D50F8A99EF00871DCB /* SPAnalyzerTimelineView.mm */,
-				1FCE59D40F8A99EF00871DCB /* SPAnalyzerTimelineView.h */,
-				1F99A30B0F98C55500BE6373 /* SPAnalyzerSampleView.mm */,
-				1F99A30A0F98C55500BE6373 /* SPAnalyzerSampleView.h */,
-				1FB7FE300F9D9E3C00BBA496 /* SPAnalyzerSampleSideView.mm */,
-				1FB7FE2F0F9D9E3C00BBA496 /* SPAnalyzerSampleSideView.h */,
-				1F9387200F81F25B0004040B /* SPAnalyzerFrequencyView.mm */,
-				1F93871F0F81F25B0004040B /* SPAnalyzerFrequencyView.h */,
-				1F932CFE0F8DCA4D00BC8A4F /* SPAnalyzerFrequencySideView.mm */,
-				1F932CFD0F8DCA4D00BC8A4F /* SPAnalyzerFrequencySideView.h */,
-				1FC1253C0F939EDF00FB50A5 /* SPAnalyzerPulseWidthView.mm */,
-				1FC1253B0F939EDF00FB50A5 /* SPAnalyzerPulseWidthView.h */,
-				1F99A1970F97B90000BE6373 /* SPAnalyzerPulseWidthSideView.mm */,
-				1F99A1960F97B90000BE6373 /* SPAnalyzerPulseWidthSideView.h */,
-				1F4D00EE0FA4508300003C7C /* SPAnalyzerWaveformView.mm */,
-				1F4D00ED0FA4508300003C7C /* SPAnalyzerWaveformView.h */,
-				1F5920530FA4B05000B84DDC /* SPAnalyzerWaveformSideView.mm */,
-				1F5920520FA4B05000B84DDC /* SPAnalyzerWaveformSideView.h */,
-				1F5921A90FA5E6BB00B84DDC /* SPAnalyzerAdsrView.mm */,
-				1F5921A80FA5E6BB00B84DDC /* SPAnalyzerAdsrView.h */,
-				1F5921AC0FA5E6CF00B84DDC /* SPAnalyzerAdsrSideView.mm */,
-				1F5921AB0FA5E6CF00B84DDC /* SPAnalyzerAdsrSideView.h */,
-				1FEB2D6B0FB94D3B00AD9F79 /* SPAnalyzerFilterSettingsView.mm */,
-				1FEB2D6A0FB94D3B00AD9F79 /* SPAnalyzerFilterSettingsView.h */,
-				1FEB2D710FB94D6A00AD9F79 /* SPAnalyzerFilterSettingsSideView.mm */,
-				1FEB2D700FB94D6A00AD9F79 /* SPAnalyzerFilterSettingsSideView.h */,
-			);
-			name = "Analyzer Window Views";
-			sourceTree = "<group>";
-		};
 		1FBAFB020CEF9998006CD6A5 /* MD Importer */ = {
 			isa = PBXGroup;
 			children = (
@@ -1444,6 +1320,130 @@
 				1FEB2AD90FB5C14900AD9F79 /* SPRemixKwedOrgController.h */,
 			);
 			path = "UI Classes";
+			sourceTree = "<group>";
+		};
+		E91C2CA02402977300532C5C /* Source List */ = {
+			isa = PBXGroup;
+			children = (
+				1F46266A0D9AEE5000C12916 /* SPSourceListDataSource.mm */,
+				1F3895C20CED826800942B17 /* SPSourceListDataSource.h */,
+				1F3895BF0CED826800942B17 /* SPSourceListItem.mm */,
+				1F3895C00CED826800942B17 /* SPSourceListItem.h */,
+				1F3895C10CED826800942B17 /* SPSourceListCell.mm */,
+				1F3895BE0CED826800942B17 /* SPSourceListCell.h */,
+			);
+			path = "Source List";
+			sourceTree = "<group>";
+		};
+		E91C2CA12402979B00532C5C /* Custom Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCC6AE10CF2264E005AFA9A /* SPStatusDisplayView.mm */,
+				1FCC6AE00CF2264E005AFA9A /* SPStatusDisplayView.h */,
+				1F05AA7B0D511BEE004725C5 /* SPVisualizerView.mm */,
+				1F05AA7C0D511BEE004725C5 /* SPVisualizerView.h */,
+				1FB8FF540D186F6500945D64 /* SPGradientBox.mm */,
+				1FB8FF530D186F6500945D64 /* SPGradientBox.h */,
+				1FB8FF730D1875EA00945D64 /* SPPredicateEditor.mm */,
+				1FB8FF720D1875EA00945D64 /* SPPredicateEditor.h */,
+				1F932CE20F8DC7B900BC8A4F /* SPSynchronizedScrollView.mm */,
+				1F932CE10F8DC7B900BC8A4F /* SPSynchronizedScrollView.h */,
+				1F4CA9670FA342A800B56AB6 /* SPCachedView.mm */,
+				1F4CA9660FA342A800B56AB6 /* SPCachedView.h */,
+				E91C2CA42402983C00532C5C /* Analyzer Window Views */,
+				E91C2CA62402986F00532C5C /* Info Windows Views */,
+			);
+			path = "Custom Views";
+			sourceTree = "<group>";
+		};
+		E91C2CA2240297E500532C5C /* Playlist Support */ = {
+			isa = PBXGroup;
+			children = (
+				1F30ABFA0D0B3E6100C162A2 /* SPPlaylist.mm */,
+				1F30ABF90D0B3E6100C162A2 /* SPPlaylist.h */,
+				1F207AD90D414B5400BBEF40 /* SPSimplePlaylist.mm */,
+				1F207AD80D414B5400BBEF40 /* SPSimplePlaylist.h */,
+				1F207ADC0D414B6100BBEF40 /* SPSmartPlaylist.mm */,
+				1F207ADB0D414B6100BBEF40 /* SPSmartPlaylist.h */,
+				1F207ADF0D414B6D00BBEF40 /* SPPlaylistItem.mm */,
+				1F207ADE0D414B6D00BBEF40 /* SPPlaylistItem.h */,
+				1FB8FE030D17107000945D64 /* SPPredicateEditorController.mm */,
+				1FB8FE020D17107000945D64 /* SPPredicateEditorController.h */,
+			);
+			path = "Playlist Support";
+			sourceTree = "<group>";
+		};
+		E91C2CA32402980600532C5C /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				1F38966B0CEE37DF00942B17 /* SPBrowserDataSource.mm */,
+				1F38966A0CEE37DF00942B17 /* SPBrowserDataSource.h */,
+				1F38966E0CEE383900942B17 /* SPBrowserItem.mm */,
+				1F38966D0CEE383900942B17 /* SPBrowserItem.h */,
+				1F9C78A20E4F4BBC0075F535 /* SPHttpBrowserItem.mm */,
+				1F9C78A30E4F4BBC0075F535 /* SPHttpBrowserItem.h */,
+				1F14E3F30D83F3F9001BAB20 /* SPBrowserState.mm */,
+				1F14E3F20D83F3F9001BAB20 /* SPBrowserState.h */,
+			);
+			path = Browser;
+			sourceTree = "<group>";
+		};
+		E91C2CA42402983C00532C5C /* Analyzer Window Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FB7FE280F9D9AEC00BBA496 /* SPAnalyzerScaleSideView.mm */,
+				1FB7FE270F9D9AEC00BBA496 /* SPAnalyzerScaleSideView.h */,
+				1FCE59D50F8A99EF00871DCB /* SPAnalyzerTimelineView.mm */,
+				1FCE59D40F8A99EF00871DCB /* SPAnalyzerTimelineView.h */,
+				1F99A30B0F98C55500BE6373 /* SPAnalyzerSampleView.mm */,
+				1F99A30A0F98C55500BE6373 /* SPAnalyzerSampleView.h */,
+				1FB7FE300F9D9E3C00BBA496 /* SPAnalyzerSampleSideView.mm */,
+				1FB7FE2F0F9D9E3C00BBA496 /* SPAnalyzerSampleSideView.h */,
+				1F9387200F81F25B0004040B /* SPAnalyzerFrequencyView.mm */,
+				1F93871F0F81F25B0004040B /* SPAnalyzerFrequencyView.h */,
+				1F932CFE0F8DCA4D00BC8A4F /* SPAnalyzerFrequencySideView.mm */,
+				1F932CFD0F8DCA4D00BC8A4F /* SPAnalyzerFrequencySideView.h */,
+				1FC1253C0F939EDF00FB50A5 /* SPAnalyzerPulseWidthView.mm */,
+				1FC1253B0F939EDF00FB50A5 /* SPAnalyzerPulseWidthView.h */,
+				1F99A1970F97B90000BE6373 /* SPAnalyzerPulseWidthSideView.mm */,
+				1F99A1960F97B90000BE6373 /* SPAnalyzerPulseWidthSideView.h */,
+				1F4D00EE0FA4508300003C7C /* SPAnalyzerWaveformView.mm */,
+				1F4D00ED0FA4508300003C7C /* SPAnalyzerWaveformView.h */,
+				1F5920530FA4B05000B84DDC /* SPAnalyzerWaveformSideView.mm */,
+				1F5920520FA4B05000B84DDC /* SPAnalyzerWaveformSideView.h */,
+				1F5921A90FA5E6BB00B84DDC /* SPAnalyzerAdsrView.mm */,
+				1F5921A80FA5E6BB00B84DDC /* SPAnalyzerAdsrView.h */,
+				1F5921AC0FA5E6CF00B84DDC /* SPAnalyzerAdsrSideView.mm */,
+				1F5921AB0FA5E6CF00B84DDC /* SPAnalyzerAdsrSideView.h */,
+				1FEB2D6B0FB94D3B00AD9F79 /* SPAnalyzerFilterSettingsView.mm */,
+				1FEB2D6A0FB94D3B00AD9F79 /* SPAnalyzerFilterSettingsView.h */,
+				1FEB2D710FB94D6A00AD9F79 /* SPAnalyzerFilterSettingsSideView.mm */,
+				1FEB2D700FB94D6A00AD9F79 /* SPAnalyzerFilterSettingsSideView.h */,
+			);
+			path = "Analyzer Window Views";
+			sourceTree = "<group>";
+		};
+		E91C2CA62402986F00532C5C /* Info Windows Views */ = {
+			isa = PBXGroup;
+			children = (
+				1F5174280CF9BA810064AFA2 /* SPInfoContainerView.mm */,
+				1F5174270CF9BA810064AFA2 /* SPInfoContainerView.h */,
+				1F5174250CF9B7870064AFA2 /* SPInfoView.mm */,
+				1F5174240CF9B7870064AFA2 /* SPInfoView.h */,
+				1F25A3E50CFCB7A70063F7E7 /* SPTuneInfoView.mm */,
+				1F25A3E40CFCB7A70063F7E7 /* SPTuneInfoView.h */,
+				1F51741C0CF9AD6A0064AFA2 /* SPOscilloscopeView.mm */,
+				1F51741B0CF9AD6A0064AFA2 /* SPOscilloscopeView.h */,
+				1F25A48D0CFCC5DB0063F7E7 /* SPSidRegisterView.mm */,
+				1F25A48C0CFCC5DB0063F7E7 /* SPSidRegisterView.h */,
+				1F25A4900CFCC6510063F7E7 /* SPMixerView.mm */,
+				1F25A48F0CFCC6510063F7E7 /* SPMixerView.h */,
+				1F25A4930CFCC6F30063F7E7 /* SPFilterControlView.mm */,
+				1F25A4920CFCC6F30063F7E7 /* SPFilterControlView.h */,
+				1F25A4960CFCC7680063F7E7 /* SPComposerPhotoView.mm */,
+				1F25A4950CFCC7680063F7E7 /* SPComposerPhotoView.h */,
+			);
+			path = "Info Windows Views";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
