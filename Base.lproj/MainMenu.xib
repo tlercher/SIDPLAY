@@ -603,7 +603,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
                                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" copiesOnScroll="NO" id="uZp-yr-OUR">
                                             <rect key="frame" x="0.0" y="0.0" width="209" height="679"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <outlineView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="23" indentationPerLevel="14" outlineTableColumn="475" id="473" customClass="SPSourceListView">
                                                     <rect key="frame" x="0.0" y="0.0" width="209" height="679"/>
@@ -658,7 +658,7 @@
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                         <clipView key="contentView" ambiguous="YES" id="Lau-qN-6GF">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="665"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <outlineView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveName="SidPlayBrowser" rowHeight="15" headerView="460" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="461" id="459" customClass="SPBrowserView">
                                                     <rect key="frame" x="0.0" y="0.0" width="803" height="642"/>
@@ -833,9 +833,9 @@
                                                     <segmentedCell key="cell" state="on" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="1981">
                                                         <font key="font" metaFont="system"/>
                                                         <segments>
-                                                            <segment toolTip="Turn fade-out on or off" image="fade" imageScaling="none" width="32"/>
-                                                            <segment toolTip="Turn repeat on or off" image="repeat_button" imageScaling="none" width="32" tag="1"/>
-                                                            <segment toolTip="Turn shuffle on or off" image="shuffle" imageScaling="none" width="32" tag="2"/>
+                                                            <segment toolTip="Turn fade-out on or off" image="Pathbar/FadeOut" imageScaling="none" width="32"/>
+                                                            <segment toolTip="Turn repeat on or off" image="Pathbar/Repeat" imageScaling="none" width="32" tag="1"/>
+                                                            <segment toolTip="Turn shuffle on or off" image="Pathbar/Shuffle" imageScaling="none" width="32" tag="2"/>
                                                         </segments>
                                                     </segmentedCell>
                                                     <connections>
@@ -1150,7 +1150,7 @@
                     <button toolTip="Stop playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1894">
                         <rect key="frame" x="5" y="22" width="41" height="41"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="hud_stop" imagePosition="only" alignment="center" imageScaling="proportionallyDown" id="1899">
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="HUD/Stop" imagePosition="only" alignment="center" imageScaling="proportionallyDown" id="1899">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1161,7 +1161,7 @@
                     <button toolTip="Enable fast forwarding of playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1895">
                         <rect key="frame" x="84" y="32" width="29" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_warp" imagePosition="only" alignment="center" continuous="YES" id="1898">
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Warp" imagePosition="only" alignment="center" continuous="YES" id="1898">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1172,7 +1172,7 @@
                     <button toolTip="Start/pause playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1896">
                         <rect key="frame" x="47" y="28" width="29" height="28"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_play" imagePosition="only" alignment="center" id="1897">
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Play" imagePosition="only" alignment="center" id="1897">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1183,7 +1183,7 @@
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1900">
                         <rect key="frame" x="98" y="7" width="26" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_right" id="1905"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeRight" id="1905"/>
                     </imageView>
                     <slider toolTip="Change playback volume" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1901">
                         <rect key="frame" x="33" y="9" width="64" height="12"/>
@@ -1198,7 +1198,7 @@
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1902">
                         <rect key="frame" x="12" y="7" width="19" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_left" id="1903"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeLeft" id="1903"/>
                     </imageView>
                 </subviews>
             </view>
@@ -1347,7 +1347,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="F3B-Cn-Urn">
                             <rect key="frame" x="1" y="1" width="347" height="154"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <textView ambiguous="YES" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" usesRuler="YES" spellingCorrection="YES" id="861">
                                     <rect key="frame" x="0.0" y="-14" width="347" height="154"/>
@@ -2834,7 +2834,7 @@ http://lame.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="6rL-AI-JWl">
                             <rect key="frame" x="1" y="1" width="471" height="137"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1686">
                                     <rect key="frame" x="0.0" y="-14" width="471" height="137"/>
@@ -3127,7 +3127,7 @@ http://psid64.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <clipView key="contentView" ambiguous="YES" id="U2e-Rm-zPx">
                             <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
                                 <collectionView ambiguous="YES" maxNumberOfColumns="1" id="1375">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
@@ -3686,18 +3686,13 @@ Gw
         <image name="NSGoRightTemplate" width="9" height="12"/>
         <image name="NSRevealFreestandingTemplate" width="14" height="14"/>
         <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
+        <image name="Pathbar/FadeOut" width="26" height="16"/>
+        <image name="Pathbar/Repeat" width="26" height="16"/>
+        <image name="Pathbar/Shuffle" width="26" height="16"/>
         <image name="Sync" width="32" height="23"/>
         <image name="TempoLeft" width="8" height="13"/>
         <image name="TempoRight" width="8" height="13"/>
         <image name="VolumeLeft" width="14" height="12"/>
         <image name="VolumeRight" width="20" height="14"/>
-        <image name="fade" width="26" height="16"/>
-        <image name="hud_play" width="19" height="22"/>
-        <image name="hud_stop" width="16" height="16"/>
-        <image name="hud_warp" width="28" height="16"/>
-        <image name="repeat_button" width="26" height="16"/>
-        <image name="shuffle" width="26" height="16"/>
-        <image name="volume_left" width="14" height="12"/>
-        <image name="volume_right" width="20" height="14"/>
     </resources>
 </document>
