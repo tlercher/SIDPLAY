@@ -382,12 +382,12 @@ static SPAnalyzerWindowController* sharedInstance = nil;
 {
 	if (pause)
 	{
-		[playPauseButton setImage:[NSImage imageNamed:@"pause"]];
+		[playPauseButton setImage:[NSImage imageNamed:@"HUD/Pause"]];
 		[playPauseButton setAlternateImage:[NSImage imageNamed:@"pause_pressed"]];
 	}
 	else
 	{
-		[playPauseButton setImage:[NSImage imageNamed:@"play"]];
+		[playPauseButton setImage:[NSImage imageNamed:@"HUD/Play"]];
 		[playPauseButton setAlternateImage:[NSImage imageNamed:@"play_pressed"]];
 	}
 }

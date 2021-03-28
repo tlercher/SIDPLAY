@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="15705" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="17701" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
         <deployment identifier="macosx"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="15705"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="17701"/>
+        <capability name="System colors introduced in macOS 10.14" minToolsVersion="10.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -538,34 +539,34 @@
             </items>
             <point key="canvasLocation" x="140" y="154"/>
         </menu>
-        <window title="SIDPLAY" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="SidplayWindow" animationBehavior="default" id="371" userLabel="Main Window" customClass="SPPlayerWindow">
+        <window title="SIDPLAY" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="SidplayWindow" animationBehavior="default" toolbarStyle="expanded" id="371" userLabel="Main Window" customClass="SPPlayerWindow">
             <windowStyleMask key="styleMask" titled="YES" miniaturizable="YES" resizable="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="333" y="173" width="978" height="708"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="940" height="450"/>
             <view key="contentView" id="372">
                 <rect key="frame" x="0.0" y="0.0" width="978" height="708"/>
                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                 <subviews>
-                    <splitView identifier="Main Window SplitView" canDrawConcurrently="YES" focusRingType="none" autosaveName="SidplaySplitView" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="505">
+                    <splitView identifier="Main Window SplitView" focusRingType="none" autosaveName="SidplaySplitView" dividerStyle="thin" vertical="YES" translatesAutoresizingMaskIntoConstraints="NO" id="505">
                         <rect key="frame" x="0.0" y="0.0" width="978" height="708"/>
                         <subviews>
                             <customView fixedFrame="YES" id="454">
                                 <rect key="frame" x="0.0" y="0.0" width="209" height="708"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <box fixedFrame="YES" boxType="custom" borderType="line" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-WU-sqO" customClass="SPGradientBox">
+                                    <box fixedFrame="YES" boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="aaw-WU-sqO">
                                         <rect key="frame" x="0.0" y="0.0" width="209" height="28"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
-                                        <view key="contentView" ambiguous="YES" id="R2g-ZB-2C5">
+                                        <view key="contentView" id="R2g-ZB-2C5">
                                             <rect key="frame" x="0.0" y="0.0" width="209" height="28"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <subviews>
                                                 <button hidden="YES" toolTip="Add Smart Playlist" focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1060">
                                                     <rect key="frame" x="0.0" y="2" width="32" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="add_smart" imagePosition="only" alignment="center" focusRingType="none" inset="2" id="1061">
+                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="AddSmart" imagePosition="only" alignment="center" focusRingType="none" inset="2" id="1061">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
@@ -576,7 +577,7 @@
                                                 <button toolTip="Add Playlist" focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="557">
                                                     <rect key="frame" x="0.0" y="2" width="32" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="add" imagePosition="only" alignment="center" focusRingType="none" inset="2" id="558">
+                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Add" imagePosition="overlaps" alignment="center" focusRingType="none" inset="2" id="558">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
@@ -587,7 +588,7 @@
                                                 <button toolTip="Sync current collection with latest version" focusRingType="none" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="685">
                                                     <rect key="frame" x="35" y="2" width="32" height="23"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES"/>
-                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="sync" imagePosition="only" alignment="center" focusRingType="none" inset="2" id="686">
+                                                    <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="Sync" imagePosition="only" alignment="center" focusRingType="none" inset="2" id="686">
                                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                                         <font key="font" metaFont="system"/>
                                                     </buttonCell>
@@ -597,33 +598,30 @@
                                                 </button>
                                             </subviews>
                                         </view>
-                                        <color key="borderColor" white="0.0" alpha="0.41999999999999998" colorSpace="calibratedWhite"/>
-                                        <color key="fillColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </box>
                                     <scrollView focusRingType="none" fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="23" horizontalPageScroll="10" verticalLineScroll="23" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="470">
                                         <rect key="frame" x="0.0" y="29" width="209" height="679"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="uZp-yr-OUR">
+                                        <clipView key="contentView" drawsBackground="NO" copiesOnScroll="NO" id="uZp-yr-OUR">
                                             <rect key="frame" x="0.0" y="0.0" width="209" height="679"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <outlineView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="23" indentationPerLevel="14" outlineTableColumn="475" id="473" customClass="SPSourceListView">
+                                                <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" selectionHighlightStyle="sourceList" columnReordering="NO" columnResizing="NO" multipleSelection="NO" autosaveColumns="NO" rowHeight="23" indentationPerLevel="14" outlineTableColumn="475" id="473" customClass="SPSourceListView">
                                                     <rect key="frame" x="0.0" y="0.0" width="209" height="679"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <size key="intercellSpacing" width="3" height="0.0"/>
                                                     <color key="backgroundColor" name="_sourceListBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
-                                                        <tableColumn width="206" minWidth="16" maxWidth="1000" id="475">
+                                                        <tableColumn width="177" minWidth="16" maxWidth="1000" id="475">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="478" customClass="SPSourceListCell">
                                                                 <font key="font" metaFont="system"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
@@ -640,11 +638,11 @@
                                             <nil key="backgroundColor"/>
                                         </clipView>
                                         <edgeInsets key="contentInsets" left="0.0" right="0.0" top="0.0" bottom="0.0"/>
-                                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="472">
+                                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="472">
                                             <rect key="frame" x="-100" y="-100" width="194" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="471">
+                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="471">
                                             <rect key="frame" x="194" y="0.0" width="15" height="686"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
@@ -658,91 +656,85 @@
                                     <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="17" horizontalPageScroll="10" verticalLineScroll="17" verticalPageScroll="10" horizontalScrollElasticity="none" translatesAutoresizingMaskIntoConstraints="NO" id="456">
                                         <rect key="frame" x="0.0" y="0.0" width="768" height="680"/>
                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                        <clipView key="contentView" ambiguous="YES" id="Lau-qN-6GF">
+                                        <clipView key="contentView" id="Lau-qN-6GF">
                                             <rect key="frame" x="0.0" y="0.0" width="768" height="665"/>
-                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <outlineView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveName="SidPlayBrowser" rowHeight="15" headerView="460" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="461" id="459" customClass="SPBrowserView">
-                                                    <rect key="frame" x="0.0" y="0.0" width="803" height="642"/>
+                                                <outlineView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" autosaveName="SidPlayBrowser" rowHeight="15" headerView="460" indentationPerLevel="16" autoresizesOutlineColumn="YES" outlineTableColumn="461" id="459" customClass="SPBrowserView">
+                                                    <rect key="frame" x="0.0" y="0.0" width="832" height="642"/>
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                     <size key="intercellSpacing" width="3" height="2"/>
                                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                     <tableViewGridLines key="gridStyleMask" vertical="YES"/>
-                                                    <color key="gridColor" red="0.85098046000000005" green="0.85098046000000005" blue="0.85098046000000005" alpha="1" colorSpace="deviceRGB"/>
+                                                    <color key="gridColor" name="gridColor" catalog="System" colorSpace="catalog"/>
                                                     <tableColumns>
                                                         <tableColumn identifier="index" editable="NO" width="36" minWidth="30" maxWidth="53" id="499">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="500">
                                                                 <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="playlistIndex"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="title" editable="NO" width="125" minWidth="125" maxWidth="360" id="461">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Title">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="464">
                                                                 <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="localizedCaseInsensitiveCompare:" sortKey="title"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="subtune" width="20" minWidth="20" maxWidth="31" id="497">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="#">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="498">
                                                                 <font key="font" metaFont="message" size="11"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="defaultSubTune"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="time" editable="NO" width="43" minWidth="43" maxWidth="52" id="462">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="Time">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="463">
                                                                 <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="playTimeInSeconds"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="repeat" width="22" minWidth="22" maxWidth="35" id="1137">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="right" title="Text Cell" id="1138">
                                                                 <font key="font" metaFont="message" size="11"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="loopCount"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="author" editable="NO" width="110" minWidth="110" maxWidth="300" id="479">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Author">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
@@ -756,28 +748,26 @@
                                                         </tableColumn>
                                                         <tableColumn identifier="released" editable="NO" width="160" minWidth="160" maxWidth="250" id="481">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Released">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="482">
                                                                 <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="localizedCaseInsensitiveCompare:" sortKey="releaseInfo"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                                         </tableColumn>
                                                         <tableColumn identifier="path" width="263" minWidth="250" maxWidth="800" id="483">
                                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Path">
-                                                                <font key="font" metaFont="message" size="11"/>
                                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                                             </tableHeaderCell>
                                                             <textFieldCell key="dataCell" lineBreakMode="truncatingTail" selectable="YES" editable="YES" alignment="left" title="Text Cell" id="484">
                                                                 <font key="font" metaFont="message" size="11"/>
-                                                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                                <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
+                                                                <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                                             </textFieldCell>
                                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="path"/>
                                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
@@ -795,16 +785,16 @@
                                                 </outlineView>
                                             </subviews>
                                         </clipView>
-                                        <scroller key="horizontalScroller" verticalHuggingPriority="750" horizontal="YES" id="458">
+                                        <scroller key="horizontalScroller" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="458">
                                             <rect key="frame" x="0.0" y="665" width="768" height="15"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="457">
+                                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="457">
                                             <rect key="frame" x="753" y="17" width="15" height="648"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </scroller>
-                                        <tableHeaderView key="headerView" id="460">
-                                            <rect key="frame" x="0.0" y="0.0" width="803" height="23"/>
+                                        <tableHeaderView key="headerView" wantsLayer="YES" id="460">
+                                            <rect key="frame" x="0.0" y="0.0" width="832" height="23"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableHeaderView>
                                     </scrollView>
@@ -820,7 +810,6 @@
                                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                                     <pathCell key="cell" selectable="YES" editable="YES" focusRingType="none" alignment="left" id="508">
                                                         <font key="font" metaFont="message" size="11"/>
-                                                        <color key="backgroundColor" red="0.89803922000000003" green="0.92549020000000004" blue="0.97254901999999999" alpha="0.0" colorSpace="deviceRGB"/>
                                                         <connections>
                                                             <action selector="clickPathControl:" target="501" id="533"/>
                                                         </connections>
@@ -836,9 +825,9 @@
                                                     <segmentedCell key="cell" state="on" borderStyle="border" alignment="left" style="texturedSquare" trackingMode="momentary" id="1981">
                                                         <font key="font" metaFont="system"/>
                                                         <segments>
-                                                            <segment toolTip="Turn fade-out on or off" image="fade" imageScaling="none" width="32"/>
-                                                            <segment toolTip="Turn repeat on or off" image="repeat_button" imageScaling="none" width="32" tag="1"/>
-                                                            <segment toolTip="Turn shuffle on or off" image="shuffle" imageScaling="none" width="32" tag="2"/>
+                                                            <segment toolTip="Turn fade-out on or off" image="Pathbar/FadeOut" imageScaling="none" width="32"/>
+                                                            <segment toolTip="Turn repeat on or off" image="Pathbar/Repeat" imageScaling="none" width="32" tag="1"/>
+                                                            <segment toolTip="Turn shuffle on or off" image="Pathbar/Shuffle" imageScaling="none" width="32" tag="2"/>
                                                         </segments>
                                                     </segmentedCell>
                                                     <connections>
@@ -861,8 +850,6 @@
                                                 </segmentedControl>
                                             </subviews>
                                         </view>
-                                        <color key="borderColor" red="0.92941183000000005" green="0.95294124000000002" blue="0.99607849000000004" alpha="1" colorSpace="deviceRGB"/>
-                                        <color key="fillColor" red="0.92941183000000005" green="0.95294124000000002" blue="0.99607849000000004" alpha="1" colorSpace="deviceRGB"/>
                                     </box>
                                 </subviews>
                             </customView>
@@ -920,9 +907,9 @@
                                 <rect key="frame" x="0.0" y="0.0" width="131" height="41"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <button toolTip="Enable fast forwarding of playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="668">
-                                        <rect key="frame" x="89" y="9" width="29" height="21"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_warp" imagePosition="overlaps" alignment="center" continuous="YES" id="669">
+                                    <button toolTip="Enable fast forwarding of playback" translatesAutoresizingMaskIntoConstraints="NO" id="668">
+                                        <rect key="frame" x="90" y="9" width="28" height="21"/>
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Warp" imagePosition="overlaps" alignment="center" continuous="YES" id="669">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -930,9 +917,9 @@
                                             <action selector="clickFastForwardButton:" target="371" id="683"/>
                                         </connections>
                                     </button>
-                                    <button toolTip="Start/pause playback" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="679">
-                                        <rect key="frame" x="49" y="0.0" width="32" height="41"/>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="hud_play" imagePosition="only" alignment="center" id="680">
+                                    <button toolTip="Start/pause playback" translatesAutoresizingMaskIntoConstraints="NO" id="679">
+                                        <rect key="frame" x="49" y="0.0" width="33" height="41"/>
+                                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="HUD/Play" imagePosition="only" alignment="center" id="680">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -945,7 +932,7 @@
                                         <constraints>
                                             <constraint firstAttribute="width" constant="29" id="pme-3R-OPP"/>
                                         </constraints>
-                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_stop" imagePosition="only" alignment="center" id="671">
+                                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Stop" imagePosition="only" alignment="center" id="671">
                                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system"/>
                                         </buttonCell>
@@ -955,10 +942,11 @@
                                     </button>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstItem="668" firstAttribute="leading" secondItem="679" secondAttribute="trailing" constant="8" symbolic="YES" id="4Fs-Si-uBT"/>
+                                    <constraint firstItem="668" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="679" secondAttribute="trailing" constant="8" symbolic="YES" id="4Fs-Si-uBT"/>
                                     <constraint firstItem="666" firstAttribute="top" secondItem="668" secondAttribute="top" id="4j2-KO-HUo"/>
                                     <constraint firstItem="679" firstAttribute="leading" secondItem="666" secondAttribute="trailing" constant="8" symbolic="YES" id="5iO-gL-aD8"/>
                                     <constraint firstItem="679" firstAttribute="centerX" secondItem="38I-Zu-ash" secondAttribute="centerX" id="7Ye-Pc-DMF"/>
+                                    <constraint firstAttribute="trailing" secondItem="668" secondAttribute="trailing" constant="13" id="9rC-GL-aN6"/>
                                     <constraint firstItem="666" firstAttribute="top" secondItem="38I-Zu-ash" secondAttribute="top" constant="11" id="FiY-A0-oxt"/>
                                     <constraint firstAttribute="bottom" secondItem="666" secondAttribute="bottom" constant="9" id="NGx-HU-RMw"/>
                                     <constraint firstAttribute="bottom" secondItem="679" secondAttribute="bottom" id="Nnj-UK-RRd"/>
@@ -984,17 +972,17 @@
                                 <subviews>
                                     <imageView translatesAutoresizingMaskIntoConstraints="NO" id="721">
                                         <rect key="frame" x="125" y="12" width="18" height="17"/>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="tempo_right" id="722"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="TempoRight" id="722"/>
                                     </imageView>
                                     <imageView translatesAutoresizingMaskIntoConstraints="NO" id="1165">
                                         <rect key="frame" x="12" y="12" width="18" height="17"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="18" id="wJq-Aa-caa"/>
                                         </constraints>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="tempo_left" id="1166"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="TempoLeft" id="1166"/>
                                     </imageView>
                                     <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="691">
-                                        <rect key="frame" x="32" y="8" width="92" height="19"/>
+                                        <rect key="frame" x="30" y="6" width="96" height="23"/>
                                         <sliderCell key="cell" controlSize="small" continuous="YES" alignment="left" maxValue="100" doubleValue="50" tickMarkPosition="below" numberOfTickMarks="5" sliderType="linear" id="692"/>
                                         <connections>
                                             <action selector="moveTempoSlider:" target="371" id="1135"/>
@@ -1030,22 +1018,22 @@
                                 <rect key="frame" x="0.0" y="0.0" width="156" height="39"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                 <subviews>
-                                    <imageView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="699">
-                                        <rect key="frame" x="119" y="11" width="27" height="18"/>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="699">
+                                        <rect key="frame" x="119" y="10" width="27" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="27" id="c05-Rp-laU"/>
                                         </constraints>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_right" id="706"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeRight" id="706"/>
                                     </imageView>
-                                    <imageView misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1167">
-                                        <rect key="frame" x="10" y="11" width="18" height="17"/>
+                                    <imageView translatesAutoresizingMaskIntoConstraints="NO" id="1167">
+                                        <rect key="frame" x="10" y="10" width="18" height="19"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="18" id="NJD-UQ-d64"/>
                                         </constraints>
-                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_left" id="1168"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeLeft" id="1168"/>
                                     </imageView>
                                     <slider toolTip="Change playback volume" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="702">
-                                        <rect key="frame" x="36" y="11" width="80" height="17"/>
+                                        <rect key="frame" x="34" y="10" width="84" height="19"/>
                                         <sliderCell key="cell" controlSize="small" continuous="YES" state="on" alignment="left" maxValue="100" doubleValue="100" tickMarkPosition="above" sliderType="linear" id="703"/>
                                         <connections>
                                             <action selector="moveVolumeSlider:" target="371" id="709"/>
@@ -1134,7 +1122,7 @@
             <windowStyleMask key="styleMask" titled="YES" resizable="YES" utility="YES" texturedBackground="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="172" y="829" width="506" height="63"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="131" height="63"/>
             <value key="maxSize" type="size" width="506" height="63"/>
             <view key="contentView" id="1889">
@@ -1154,7 +1142,7 @@
                     <button toolTip="Stop playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1894">
                         <rect key="frame" x="5" y="22" width="41" height="41"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="hud_stop" imagePosition="only" alignment="center" imageScaling="proportionallyDown" id="1899">
+                        <buttonCell key="cell" type="bevel" bezelStyle="regularSquare" image="HUD/Stop" imagePosition="only" alignment="center" imageScaling="proportionallyDown" id="1899">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1165,7 +1153,7 @@
                     <button toolTip="Enable fast forwarding of playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1895">
                         <rect key="frame" x="84" y="32" width="29" height="21"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_warp" imagePosition="only" alignment="center" continuous="YES" id="1898">
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Warp" imagePosition="only" alignment="center" continuous="YES" id="1898">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1176,7 +1164,7 @@
                     <button toolTip="Start/pause playback" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1896">
                         <rect key="frame" x="47" y="28" width="29" height="28"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="hud_play" imagePosition="only" alignment="center" id="1897">
+                        <buttonCell key="cell" type="bevel" bezelStyle="rounded" image="HUD/Play" imagePosition="only" alignment="center" id="1897">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
                             <font key="font" metaFont="system"/>
                         </buttonCell>
@@ -1187,7 +1175,7 @@
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1900">
                         <rect key="frame" x="98" y="7" width="26" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_right" id="1905"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeRight" id="1905"/>
                     </imageView>
                     <slider toolTip="Change playback volume" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1901">
                         <rect key="frame" x="33" y="9" width="64" height="12"/>
@@ -1202,7 +1190,7 @@
                     <imageView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1902">
                         <rect key="frame" x="12" y="7" width="19" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
-                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="volume_left" id="1903"/>
+                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" animates="YES" image="VolumeLeft" id="1903"/>
                     </imageView>
                 </subviews>
             </view>
@@ -1313,7 +1301,7 @@
             <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="645" y="539" width="389" height="300"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="389" height="144"/>
             <value key="maxSize" type="size" width="389" height="800"/>
             <view key="contentView" id="847">
@@ -1349,11 +1337,11 @@
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="858">
                         <rect key="frame" x="20" y="20" width="349" height="156"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="F3B-Cn-Urn">
+                        <clipView key="contentView" drawsBackground="NO" id="F3B-Cn-Urn">
                             <rect key="frame" x="1" y="1" width="347" height="154"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView ambiguous="YES" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" usesRuler="YES" spellingCorrection="YES" id="861">
+                                <textView importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" usesRuler="YES" spellingCorrection="YES" id="861">
                                     <rect key="frame" x="0.0" y="-14" width="347" height="154"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -1364,11 +1352,11 @@
                                 </textView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="860">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="860">
                             <rect key="frame" x="-100" y="-100" width="87" height="18"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" controlSize="small" horizontal="NO" id="859">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" controlSize="small" horizontal="NO" id="859">
                             <rect key="frame" x="337" y="1" width="11" height="141"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -1401,7 +1389,7 @@
             <windowStyleMask key="styleMask" titled="YES" documentModal="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="383" width="642" height="127"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="869">
                 <rect key="frame" x="0.0" y="0.0" width="642" height="127"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -1462,7 +1450,7 @@ DQ
             </connections>
         </customObject>
         <predicateEditor verticalHuggingPriority="750" misplaced="YES" nestingMode="compound" rowHeight="25" id="1038" customClass="SPPredicateEditor">
-            <rect key="frame" x="0.0" y="-21" width="765" height="75"/>
+            <rect key="frame" x="0.0" y="0.0" width="765" height="75"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
             <rowTemplates>
                 <predicateEditorRowTemplate rowType="compound" id="1040">
@@ -1594,6 +1582,7 @@ DQ
                 <action selector="predicateEditorChanged:" target="1028" id="1057"/>
                 <outlet property="delegate" destination="1028" id="1056"/>
             </connections>
+            <point key="canvasLocation" x="142" y="155"/>
         </predicateEditor>
         <menu title="Collection Item Context Menu" id="1094">
             <items>
@@ -2032,7 +2021,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" documentModal="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="683" y="656" width="415" height="124"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1211">
                 <rect key="frame" x="0.0" y="0.0" width="415" height="124"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -2101,7 +2090,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="323" width="466" height="187"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1240">
                 <rect key="frame" x="0.0" y="0.0" width="466" height="187"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -2195,7 +2184,7 @@ DQ
                         <rect key="frame" x="234" y="78" width="214" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="12" doubleValue="2.1818181818181817" tickMarkPosition="below" numberOfTickMarks="12" allowsTickMarkValuesOnly="YES" sliderType="linear" id="2082">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="fadeOutTimeChanged:" target="1239" id="2123"/>
@@ -2233,7 +2222,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="1 (default)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" selectedItem="2169" id="2161">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="2162">
                                 <items>
                                     <menuItem title="1 (default)" state="on" id="2169">
@@ -2271,7 +2260,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="361" y="485" width="522" height="317"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="522" height="276"/>
             <view key="contentView" id="1446">
                 <rect key="frame" x="0.0" y="0.0" width="522" height="317"/>
@@ -2318,11 +2307,11 @@ DQ
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1470">
                         <rect key="frame" x="21" y="110" width="481" height="165"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="LwW-yl-dEH">
+                        <clipView key="contentView" drawsBackground="NO" id="LwW-yl-dEH">
                             <rect key="frame" x="1" y="1" width="479" height="163"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1473">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1473">
                                     <rect key="frame" x="0.0" y="-14" width="479" height="163"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -2333,11 +2322,11 @@ DQ
                                 </textView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1472">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1472">
                             <rect key="frame" x="1" y="149" width="464" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1471">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="1471">
                             <rect key="frame" x="465" y="1" width="15" height="148"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -2373,7 +2362,7 @@ DQ
                         <rect key="frame" x="253" y="78" width="214" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="12" doubleValue="2.1818181818181817" tickMarkPosition="below" numberOfTickMarks="12" allowsTickMarkValuesOnly="YES" sliderType="linear" id="2094">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="fadeOutTimeChanged:" target="1445" id="2124"/>
@@ -2401,7 +2390,7 @@ DQ
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="218" y="406" width="492" height="306"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1277">
                 <rect key="frame" x="0.0" y="0.0" width="492" height="306"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -2496,7 +2485,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="128 kbps" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="128" inset="2" selectedItem="1305" id="1297">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="1298">
                                 <items>
                                     <menuItem title="64 kbps" tag="64" id="1299"/>
@@ -2540,7 +2529,7 @@ DQ
                         <rect key="frame" x="111" y="107" width="269" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="1311">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="qualitySliderMoved:" target="1276" id="1355"/>
@@ -2615,7 +2604,7 @@ http://lame.sourceforge.net/</string>
                         <rect key="frame" x="236" y="195" width="214" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="12" doubleValue="2.1818181818181817" tickMarkPosition="below" numberOfTickMarks="12" allowsTickMarkValuesOnly="YES" sliderType="linear" id="2108">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="fadeOutTimeChanged:" target="1276" id="2125"/>
@@ -2635,7 +2624,7 @@ http://lame.sourceforge.net/</string>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="1 (default)" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" inset="2" selectedItem="2175" id="2173">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="2174">
                                 <items>
                                     <menuItem title="1 (default)" state="on" id="2175">
@@ -2677,7 +2666,7 @@ http://lame.sourceforge.net/</string>
             <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="121" width="516" height="389"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="516" height="369"/>
             <view key="contentView" id="1627">
                 <rect key="frame" x="0.0" y="0.0" width="516" height="389"/>
@@ -2726,7 +2715,7 @@ DQ
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="128 kbps" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" tag="128" inset="2" selectedItem="1656" id="1653">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
-                            <font key="font" metaFont="system"/>
+                            <font key="font" metaFont="menu"/>
                             <menu key="menu" title="OtherViews" id="1654">
                                 <items>
                                     <menuItem title="64 kbps" tag="64" id="1660"/>
@@ -2770,7 +2759,7 @@ DQ
                         <rect key="frame" x="130" y="88" width="269" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="1" doubleValue="0.5" tickMarkPosition="below" numberOfTickMarks="9" allowsTickMarkValuesOnly="YES" sliderType="linear" id="1663">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="qualitySliderMoved:" target="1626" id="1670"/>
@@ -2835,11 +2824,11 @@ http://lame.sourceforge.net/</string>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1685">
                         <rect key="frame" x="23" y="208" width="473" height="139"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="6rL-AI-JWl">
+                        <clipView key="contentView" drawsBackground="NO" id="6rL-AI-JWl">
                             <rect key="frame" x="1" y="1" width="471" height="137"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1686">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1686">
                                     <rect key="frame" x="0.0" y="-14" width="471" height="137"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -2850,11 +2839,11 @@ http://lame.sourceforge.net/</string>
                                 </textView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1687">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1687">
                             <rect key="frame" x="1" y="123" width="456" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1688">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="1688">
                             <rect key="frame" x="457" y="1" width="15" height="122"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -2881,7 +2870,7 @@ http://lame.sourceforge.net/</string>
                         <rect key="frame" x="238" y="176" width="214" height="25"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <sliderCell key="cell" state="on" alignment="left" maxValue="12" doubleValue="2.1818181818181817" tickMarkPosition="below" numberOfTickMarks="12" allowsTickMarkValuesOnly="YES" sliderType="linear" id="2116">
-                            <font key="font" metaFont="user"/>
+                            <font key="font" usesAppearanceFont="YES"/>
                         </sliderCell>
                         <connections>
                             <action selector="fadeOutTimeChanged:" target="1626" id="2126"/>
@@ -2913,7 +2902,7 @@ http://lame.sourceforge.net/</string>
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="325" width="545" height="185"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1760">
                 <rect key="frame" x="0.0" y="0.0" width="545" height="185"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -3002,7 +2991,7 @@ http://psid64.sourceforge.net/</string>
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="180" width="545" height="330"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1798">
                 <rect key="frame" x="0.0" y="0.0" width="545" height="330"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -3072,11 +3061,11 @@ http://psid64.sourceforge.net/</string>
                     <scrollView fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1813">
                         <rect key="frame" x="23" y="149" width="502" height="139"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" drawsBackground="NO" id="Zw1-pO-vgT">
+                        <clipView key="contentView" drawsBackground="NO" id="Zw1-pO-vgT">
                             <rect key="frame" x="1" y="1" width="500" height="137"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <textView ambiguous="YES" editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1818">
+                                <textView editable="NO" importsGraphics="NO" richText="NO" horizontallyResizable="YES" verticallyResizable="YES" spellingCorrection="YES" id="1818">
                                     <rect key="frame" x="0.0" y="-14" width="500" height="137"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
@@ -3087,11 +3076,11 @@ http://psid64.sourceforge.net/</string>
                                 </textView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1817">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="1817">
                             <rect key="frame" x="1" y="123" width="485" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="1816">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="1816">
                             <rect key="frame" x="486" y="1" width="15" height="122"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -3115,11 +3104,12 @@ http://psid64.sourceforge.net/</string>
             </connections>
             <point key="canvasLocation" x="142" y="-2437"/>
         </window>
-        <window title="Export Tasks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" appearanceType="aqua" frameAutosaveName="Export Task Window" animationBehavior="default" id="1370" customClass="SPExportTaskWindow">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
+        <window title="Export Tasks" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" visibleAtLaunch="NO" frameAutosaveName="Export Task Window" animationBehavior="default" tabbingMode="disallowed" id="1370" customClass="SPExportTaskWindow">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
+            <windowCollectionBehavior key="collectionBehavior" fullScreenNone="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="60" y="458" width="338" height="463"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="338" height="200"/>
             <view key="contentView" id="1371">
                 <rect key="frame" x="0.0" y="0.0" width="338" height="463"/>
@@ -3128,15 +3118,15 @@ http://psid64.sourceforge.net/</string>
                     <scrollView fixedFrame="YES" borderType="none" autohidesScrollers="YES" horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1372">
                         <rect key="frame" x="0.0" y="26" width="338" height="437"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" id="U2e-Rm-zPx">
+                        <clipView key="contentView" id="U2e-Rm-zPx">
                             <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
-                                <collectionView ambiguous="YES" maxNumberOfColumns="1" id="1375">
+                                <collectionView maxNumberOfColumns="1" id="1375">
                                     <rect key="frame" x="0.0" y="0.0" width="338" height="437"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                                    <color key="primaryBackgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                    <color key="secondaryBackgroundColor" red="0.92941183000000005" green="0.95294124000000002" blue="0.99607849000000004" alpha="1" colorSpace="deviceRGB"/>
+                                    <color key="primaryBackgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                    <color key="secondaryBackgroundColor" name="controlAlternatingRowColor" catalog="System" colorSpace="catalog"/>
                                     <connections>
                                         <binding destination="1393" name="content" keyPath="arrangedObjects" id="1405"/>
                                         <outlet property="itemPrototype" destination="1376" id="1378"/>
@@ -3144,11 +3134,11 @@ http://psid64.sourceforge.net/</string>
                                 </collectionView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="1374">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="1374">
                             <rect key="frame" x="-100" y="-100" width="415" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="1373">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="NO" id="1373">
                             <rect key="frame" x="415" y="0.0" width="15" height="444"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -3201,8 +3191,8 @@ http://psid64.sourceforge.net/</string>
                                 </textField>
                             </subviews>
                         </view>
-                        <color key="borderColor" red="0.22826087" green="0.22826087" blue="0.22826087" alpha="0.75" colorSpace="calibratedRGB"/>
-                        <color key="fillColor" red="0.72282612000000002" green="0.72282612000000002" blue="0.72282612000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="borderColor" name="separatorColor" catalog="System" colorSpace="catalog"/>
+                        <color key="fillColor" name="unemphasizedSelectedContentBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </box>
                 </subviews>
             </view>
@@ -3322,6 +3312,7 @@ http://psid64.sourceforge.net/</string>
                 <outlet property="exportTaskWindow" destination="1370" id="1694"/>
                 <outlet property="exportTasksCount" destination="1715" id="1722"/>
                 <outlet property="exporterArray" destination="1393" id="1437"/>
+                <outlet property="taskSlider" destination="1701" id="RHS-ND-89H"/>
             </connections>
         </customObject>
         <box autoresizesSubviews="NO" boxType="custom" borderType="none" titlePosition="noTitle" id="1839" userLabel="Spotlight Search Type View" customClass="SPGradientBox">
@@ -3443,7 +3434,7 @@ http://psid64.sourceforge.net/</string>
             <windowStyleMask key="styleMask" titled="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="162" width="591" height="348"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <view key="contentView" id="1961">
                 <rect key="frame" x="0.0" y="0.0" width="591" height="348"/>
                 <autoresizingMask key="autoresizingMask"/>
@@ -3480,7 +3471,7 @@ DQ
                         <rect key="frame" x="156" y="79" width="408" height="224"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" sendsActionOnEndEditing="YES" alignment="left" id="1969">
-                            <font key="font" metaFont="label" size="12"/>
+                            <font key="font" metaFont="cellTitle"/>
                             <string key="title">All you need now to start your Commodore 64 music experience is a collection of tunes. SIDPLAY will make it easy for you to get all the SID music you'll ever need.
 
 SIDPLAY was designed to work best with the High Voltage SID Collection (more commonly known as HVSC). If you've already downloaded the HVSC collection, just click "Use existing collection" to specify the location of your HVSC folder (usually called C64music). Or choose any other collection or a folder containing .sid files if you prefer.
@@ -3527,7 +3518,7 @@ If you're new to Commodore 64 music, SIDPLAY can download the HVSC automatically
             <windowStyleMask key="styleMask" titled="YES" resizable="YES"/>
             <windowPositionMask key="initialPositionMask" leftStrut="YES" bottomStrut="YES"/>
             <rect key="contentRect" x="196" y="113" width="610" height="397"/>
-            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2160"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="3840" height="2135"/>
             <value key="minSize" type="size" width="516" height="369"/>
             <view key="contentView" id="2192">
                 <rect key="frame" x="0.0" y="0.0" width="610" height="397"/>
@@ -3587,12 +3578,12 @@ Gw
                     <scrollView focusRingType="none" fixedFrame="YES" autohidesScrollers="YES" horizontalLineScroll="19" horizontalPageScroll="10" verticalLineScroll="19" verticalPageScroll="10" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2251">
                         <rect key="frame" x="23" y="60" width="567" height="291"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <clipView key="contentView" ambiguous="YES" id="2bm-2Y-l0Y">
-                            <rect key="frame" x="1" y="0.0" width="565" height="290"/>
-                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <clipView key="contentView" id="2bm-2Y-l0Y">
+                            <rect key="frame" x="1" y="1" width="565" height="289"/>
+                            <autoresizingMask key="autoresizingMask"/>
                             <subviews>
-                                <tableView focusRingType="none" verticalHuggingPriority="750" ambiguous="YES" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" autosaveName="RemixTableView" headerView="2255" id="2254">
-                                    <rect key="frame" x="0.0" y="0.0" width="565" height="267"/>
+                                <tableView focusRingType="none" verticalHuggingPriority="750" allowsExpansionToolTips="YES" columnAutoresizingStyle="lastColumnOnly" alternatingRowBackgroundColors="YES" multipleSelection="NO" emptySelection="NO" autosaveColumns="NO" typeSelect="NO" autosaveName="RemixTableView" headerView="2255" id="2254">
+                                    <rect key="frame" x="0.0" y="0.0" width="565" height="266"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <size key="intercellSpacing" width="3" height="2"/>
                                     <color key="backgroundColor" name="controlBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -3601,7 +3592,6 @@ Gw
                                     <tableColumns>
                                         <tableColumn identifier="rating" width="51" minWidth="51" maxWidth="3.4028229999999999e+38" id="2260">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Rating">
-                                                <font key="font" metaFont="message" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -3611,7 +3601,6 @@ Gw
                                         </tableColumn>
                                         <tableColumn identifier="title" width="232" minWidth="40" maxWidth="1000" id="2256">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Title">
-                                                <font key="font" metaFont="message" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
@@ -3625,7 +3614,6 @@ Gw
                                         </tableColumn>
                                         <tableColumn identifier="subtune" editable="NO" width="18" minWidth="10" maxWidth="3.4028229999999999e+38" id="2286">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="right" title="#">
-                                                <font key="font" metaFont="message" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" name="headerColor" catalog="System" colorSpace="catalog"/>
                                             </tableHeaderCell>
@@ -3637,9 +3625,8 @@ Gw
                                             <sortDescriptor key="sortDescriptorPrototype" selector="compare:" sortKey="subtuneIndex"/>
                                             <tableColumnResizingMask key="resizingMask" resizeWithTable="YES" userResizable="YES"/>
                                         </tableColumn>
-                                        <tableColumn identifier="arranger" width="252" minWidth="40" maxWidth="1000" id="2257">
+                                        <tableColumn identifier="arranger" width="214" minWidth="40" maxWidth="1000" id="2257">
                                             <tableHeaderCell key="headerCell" lineBreakMode="truncatingTail" borderStyle="border" alignment="left" title="Arranger">
-                                                <font key="font" metaFont="message" size="11"/>
                                                 <color key="textColor" name="headerTextColor" catalog="System" colorSpace="catalog"/>
                                                 <color key="backgroundColor" white="0.33333299" alpha="1" colorSpace="calibratedWhite"/>
                                             </tableHeaderCell>
@@ -3659,11 +3646,11 @@ Gw
                                 </tableView>
                             </subviews>
                         </clipView>
-                        <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="YES" id="2253">
+                        <scroller key="horizontalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="YES" id="2253">
                             <rect key="frame" x="1" y="275" width="550" height="15"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
-                        <scroller key="verticalScroller" hidden="YES" verticalHuggingPriority="750" horizontal="NO" id="2252">
+                        <scroller key="verticalScroller" hidden="YES" wantsLayer="YES" verticalHuggingPriority="750" horizontal="NO" id="2252">
                             <rect key="frame" x="551" y="17" width="15" height="258"/>
                             <autoresizingMask key="autoresizingMask"/>
                         </scroller>
@@ -3678,23 +3665,23 @@ Gw
         </window>
     </objects>
     <resources>
+        <image name="Add" width="32" height="23"/>
+        <image name="AddSmart" width="32" height="23"/>
+        <image name="HUD/Play" width="19" height="22"/>
+        <image name="HUD/Stop" width="16" height="16"/>
+        <image name="HUD/Warp" width="28" height="16"/>
         <image name="NSApplicationIcon" width="32" height="32"/>
-        <image name="NSGoLeftTemplate" width="9" height="12"/>
-        <image name="NSGoRightTemplate" width="9" height="12"/>
-        <image name="NSRevealFreestandingTemplate" width="14" height="14"/>
-        <image name="NSStopProgressFreestandingTemplate" width="14" height="14"/>
-        <image name="add" width="32" height="23"/>
-        <image name="add_smart" width="32" height="23"/>
-        <image name="fade" width="26" height="16"/>
-        <image name="hud_play" width="19" height="22"/>
-        <image name="hud_stop" width="16" height="16"/>
-        <image name="hud_warp" width="28" height="16"/>
-        <image name="repeat_button" width="26" height="16"/>
-        <image name="shuffle" width="26" height="16"/>
-        <image name="sync" width="32" height="23"/>
-        <image name="tempo_left" width="8" height="13"/>
-        <image name="tempo_right" width="8" height="13"/>
-        <image name="volume_left" width="14" height="12"/>
-        <image name="volume_right" width="20" height="14"/>
+        <image name="NSGoLeftTemplate" width="10" height="14"/>
+        <image name="NSGoRightTemplate" width="10" height="14"/>
+        <image name="NSRevealFreestandingTemplate" width="15" height="15"/>
+        <image name="NSStopProgressFreestandingTemplate" width="15" height="15"/>
+        <image name="Pathbar/FadeOut" width="26" height="16"/>
+        <image name="Pathbar/Repeat" width="26" height="16"/>
+        <image name="Pathbar/Shuffle" width="26" height="16"/>
+        <image name="Sync" width="32" height="23"/>
+        <image name="TempoLeft" width="8" height="13"/>
+        <image name="TempoRight" width="8" height="13"/>
+        <image name="VolumeLeft" width="14" height="12"/>
+        <image name="VolumeRight" width="20" height="14"/>
     </resources>
 </document>

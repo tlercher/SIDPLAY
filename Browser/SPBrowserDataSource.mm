@@ -1980,12 +1980,12 @@ static NSImage* SPShuffleButtonImage = nil;
 {
 	if (SPFadeButtonPressedImage == nil)
 	{
-		SPFadeButtonPressedImage = [NSImage imageNamed:@"fade_pressed"];
-		SPFadeButtonImage = [NSImage imageNamed:@"fade"];
-		SPRepeatButtonPressedImage = [NSImage imageNamed:@"repeat_button_pressed"];
-		SPRepeatButtonImage = [NSImage imageNamed:@"repeat_button"];
-		SPShuffleButtonPressedImage = [NSImage imageNamed:@"shuffle_pressed"];
-		SPShuffleButtonImage = [NSImage imageNamed:@"shuffle"];
+		SPFadeButtonPressedImage = [NSImage imageNamed:@"Pathbar/FadeOutPressed"];
+		SPFadeButtonImage = [NSImage imageNamed:@"Pathbar/FadeOut"];
+		SPRepeatButtonPressedImage = [NSImage imageNamed:@"Pathbar/RepeatPressed"];
+		SPRepeatButtonImage = [NSImage imageNamed:@"Pathbar/Repeat"];
+		SPShuffleButtonPressedImage = [NSImage imageNamed:@"Pathbar/ShufflePressed"];
+		SPShuffleButtonImage = [NSImage imageNamed:@"Pathbar/ShufflePressed"];
 	}
 
 	[browserPlaybackModeControl setImage:(gPreferences.mFadeActive ? SPFadeButtonPressedImage : SPFadeButtonImage) forSegment:0];
@@ -2699,7 +2699,7 @@ static NSImage* SPShuffleButtonImage = nil;
 		[iconImage drawInRect:NSMakeRect(16.0f, 16.0f, 32.0f, 32.0f) fromRect:iconImageRect operation:NSCompositeSourceOver fraction:0.5f];
 		[badgeImage compositeToPoint:NSMakePoint(38.0f, 10.0f) operation:NSCompositeSourceOver];
 		NSDictionary* normalAttrs = [NSDictionary dictionaryWithObjectsAndKeys:[NSFont boldSystemFontOfSize:11.0f], NSFontAttributeName,
-																		       [NSColor whiteColor], NSForegroundColorAttributeName, nil];
+																		       [NSColor labelColor], NSForegroundColorAttributeName, nil];
 		NSMutableAttributedString* numberString = [[NSMutableAttributedString alloc] initWithString:[NSString stringWithFormat:@"%lu", (unsigned long)[dragRows count]] attributes:normalAttrs];
 		[numberString drawAtPoint:NSMakePoint(47.0f, 16.0f)];
 		[image unlockFocus];

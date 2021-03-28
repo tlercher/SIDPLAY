@@ -16,7 +16,10 @@
 	itemsToExport = nil;
 	exportDirectoryPath = nil;
 	NSProcessInfo* processInfo = [NSProcessInfo processInfo];
-	numberOfConcurrentExportTasks = MIN(8, [processInfo activeProcessorCount]);
+    double stepSize = [processInfo activeProcessorCount]/8;
+    taskSlider.altIncrementValue = stepSize;
+    taskSlider.maxValue = [processInfo activeProcessorCount];
+	numberOfConcurrentExportTasks = [processInfo activeProcessorCount];
 	
 	exportSettings.Init();
 }
