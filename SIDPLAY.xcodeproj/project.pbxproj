@@ -20,8 +20,6 @@
 		1F25A4940CFCC6F30063F7E7 /* SPFilterControlView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F25A4930CFCC6F30063F7E7 /* SPFilterControlView.mm */; };
 		1F25A4970CFCC7680063F7E7 /* SPComposerPhotoView.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F25A4960CFCC7680063F7E7 /* SPComposerPhotoView.mm */; };
 		1F25A5B70CFD57990063F7E7 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F25A5B60CFD57990063F7E7 /* QuartzCore.framework */; };
-		1F2820CE0D43FD0C00AAB993 /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2820CD0D43FD0C00AAB993 /* Sparkle.framework */; };
-		1F2820E30D43FD1F00AAB993 /* Sparkle.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2820CD0D43FD0C00AAB993 /* Sparkle.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		1F2822460D469EA100AAB993 /* SPPlaylistItem.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F207ADF0D414B6D00BBEF40 /* SPPlaylistItem.mm */; };
 		1F2EC4BE0D36020A002DA711 /* SPExportTaskWindow.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1F2EC4BD0D36020A002DA711 /* SPExportTaskWindow.mm */; };
 		1F30A9550D0AF9ED00C162A2 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F30A9540D0AF9ED00C162A2 /* WebKit.framework */; };
@@ -201,7 +199,6 @@
 		1FEE5AB50CF88604006A04B0 /* SPCollectionUtilities.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1FEE5AB40CF88604006A04B0 /* SPCollectionUtilities.mm */; };
 		1FF0D9670D01D6B100796FBF /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1FF0D9650D01D6B100796FBF /* MainMenu.xib */; };
 		1FF9A5760E583C6500240029 /* sharing.tiff in Resources */ = {isa = PBXBuildFile; fileRef = 1FF9A5750E583C6500240029 /* sharing.tiff */; };
-		1FFB9B8F1D2312DB00D47739 /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = 1FFB9B8E1D2312DB00D47739 /* dsa_pub.pem */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
@@ -239,17 +236,6 @@
 			name = "Copy Spotlight Plugin";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1F2820E50D43FD2A00AAB993 /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				1F2820E30D43FD1F00AAB993 /* Sparkle.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -278,7 +264,6 @@
 		1F25A4950CFCC7680063F7E7 /* SPComposerPhotoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPComposerPhotoView.h; sourceTree = "<group>"; };
 		1F25A4960CFCC7680063F7E7 /* SPComposerPhotoView.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPComposerPhotoView.mm; sourceTree = "<group>"; };
 		1F25A5B60CFD57990063F7E7 /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = /System/Library/Frameworks/QuartzCore.framework; sourceTree = "<absolute>"; };
-		1F2820CD0D43FD0C00AAB993 /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		1F2EC4BC0D36020A002DA711 /* SPExportTaskWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPExportTaskWindow.h; sourceTree = "<group>"; };
 		1F2EC4BD0D36020A002DA711 /* SPExportTaskWindow.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPExportTaskWindow.mm; sourceTree = "<group>"; };
 		1F30A9540D0AF9ED00C162A2 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = /System/Library/Frameworks/WebKit.framework; sourceTree = "<absolute>"; };
@@ -584,7 +569,6 @@
 		1FEF90510D02E5550014D7B2 /* SPColorProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SPColorProvider.h; sourceTree = "<group>"; };
 		1FEF90520D02E5550014D7B2 /* SPColorProvider.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SPColorProvider.mm; sourceTree = "<group>"; };
 		1FF9A5750E583C6500240029 /* sharing.tiff */ = {isa = PBXFileReference; lastKnownFileType = image.tiff; name = sharing.tiff; path = Resources/sharing.tiff; sourceTree = "<group>"; };
-		1FFB9B8E1D2312DB00D47739 /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = dsa_pub.pem; path = Resources/dsa_pub.pem; sourceTree = "<group>"; };
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
@@ -615,7 +599,6 @@
 				1F51734D0CF99C460064AFA2 /* Quartz.framework in Frameworks */,
 				1F25A5B70CFD57990063F7E7 /* QuartzCore.framework in Frameworks */,
 				1F30A9550D0AF9ED00C162A2 /* WebKit.framework in Frameworks */,
-				1F2820CE0D43FD0C00AAB993 /* Sparkle.framework in Frameworks */,
 				1FDD6F4E0D8306C500489870 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -642,7 +625,6 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
-				1F2820CD0D43FD0C00AAB993 /* Sparkle.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -1117,7 +1099,6 @@
 				E91C2C9A2402902900532C5C /* SIDPLAY.entitlements */,
 				1F05AABD0D5121AF004725C5 /* DefaultVisualizer.qtz */,
 				1FE738DC0D03E82100C37ADB /* logo.qtz */,
-				1FFB9B8E1D2312DB00D47739 /* dsa_pub.pem */,
 				1F3895900CECF80F00942B17 /* Images */,
 				1F40A5F20D3A364200AD3B5D /* psid64 */,
 				8D1107310486CEB800E47090 /* Info.plist */,
@@ -1305,7 +1286,6 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				1F17B2480CEF9BC90000EA52 /* Copy Spotlight Plugin */,
-				1F2820E50D43FD2A00AAB993 /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
@@ -1405,7 +1385,6 @@
 				1F54288B0F96596C00008AA3 /* point2.png in Resources */,
 				1FB7FEE20F9E555700BBA496 /* capture_pressed.png in Resources */,
 				1FB7FEE30F9E555700BBA496 /* capture_disabled.png in Resources */,
-				1FFB9B8F1D2312DB00D47739 /* dsa_pub.pem in Resources */,
 				1FB7FEE40F9E555700BBA496 /* capture.png in Resources */,
 				1FB700890F9F970600BBA496 /* playback_cursor.png in Resources */,
 				1FB700C30F9F9C9F00BBA496 /* reverse.tiff in Resources */,
@@ -1682,7 +1661,6 @@
 					"\"$(SRCROOT)/libsidplay2/include\"/**",
 					"\"$(SRCROOT)/libsidplay2/resid\"",
 				);
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -1704,9 +1682,6 @@
 					"\"$(SRCROOT)\"",
 					"\"$(SRCROOT)/..\"",
 				);
-				GCC_ENABLE_SSE3_EXTENSIONS = YES;
-				GCC_ENABLE_SSE41_EXTENSIONS = YES;
-				GCC_ENABLE_SSE42_EXTENSIONS = YES;
 				GCC_OPTIMIZATION_LEVEL = 3;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = SIDPLAY_Prefix.pch;
@@ -1741,7 +1716,6 @@
 					"\"$(SRCROOT)/libsidplay2/include\"/**",
 					"\"$(SRCROOT)/libsidplay2/resid\"",
 				);
-				VALID_ARCHS = x86_64;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -1781,7 +1755,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -1821,7 +1795,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = NO;
 				MACOSX_DEPLOYMENT_TARGET = 10.13;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = macosx;
 			};
 			name = Release;
